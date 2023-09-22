@@ -69,7 +69,8 @@ spec:
           aws_proton_dev_environment_name: "backstage-proton-plugins-tutorial-env"
           aws_proton_prod_environment_name: "backstage-proton-plugins-tutorial-env"
           # The AWS account where the Proton service will be created
-          aws_account_id: "111111111111"
+          aws-access-key-id: '${{ secrets.TF_USER_AWS_KEY }}'
+          aws-secret-access-key: '${{ secrets.TF_USER_AWS_SECRET }}'
           # The AWS region where the Proton service will be created
           aws_region: us-east-1
 
